@@ -1,0 +1,195 @@
+/* ===============================
+   RESET & GLOBAL
+================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+  color: #1f2937;
+  background: #f8fafc;
+}
+
+/* ===============================
+   ROOT VARIABLES
+================================ */
+
+:root {
+  --primary: #7c3aed;
+  --primary-hover: #6d28d9;
+
+  --background: #f8fafc;
+  --card-bg: #ffffff;
+
+  --text-dark: #0f172a;
+  --text-light: #64748b;
+
+  --border: #e5e7eb;
+}
+
+/* ===============================
+   NAVBAR
+================================ */
+
+.navbar {
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(246, 248, 247);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* LOGO */
+
+.logo {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+
+  background: linear-gradient(
+    90deg,
+    #7c3aed,
+    #6366f1,
+    #3b82f6,
+    #06b6d4
+  );
+
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+
+  animation: gradientMove 4s linear infinite;
+  text-decoration: none;
+}
+
+@keyframes gradientMove {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* NAV LINKS */
+
+.nav-links {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-btn {
+  padding: 8px 18px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+  transition: all 0.25s ease;
+}
+
+/* HOVER */
+
+.nav-btn:hover {
+  background: rgba(139, 92, 246, 0.12);
+  color: #6d28d9;
+}
+
+/* ACTIVE */
+
+.nav-btn.active {
+  background: linear-gradient(135deg, #8b5cf6, #a855f7);
+  color: white;
+  box-shadow: 0 6px 18px rgba(139, 92, 246, 0.45);
+}
+
+.nav-btn:active {
+  transform: scale(0.95);
+}
+
+/* ===============================
+   PAGE WRAPPER
+================================ */
+
+.page {
+  min-height: 100vh;
+  padding: 80px 8%;
+}
+
+/* ===============================
+   CARD (GLOBAL)
+================================ */
+
+.card {
+  background: var(--card-bg);
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.12);
+}
+
+/* ===============================
+   BUTTONS (GLOBAL)
+================================ */
+
+.btn {
+  padding: 12px 28px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #6366f1, #9333ea);
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(99,102,241,0.35);
+}
+
+.btn.outline {
+  background: transparent;
+  border: 2px solid #6366f1;
+  color: #6366f1;
+}
+
+/* ===============================
+   MOBILE RESPONSIVE FIXES
+================================ */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    padding: 16px;
+  }
+
+  .nav-links {
+    gap: 6px;
+  }
+
+  .nav-btn {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+
+  .page {
+    padding: 60px 16px;
+  }
+
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Akshay | Data Analyst</title>
+
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/home.css">
+
+</head>
+
+<body>
+
+<!-- ✅ NAVBAR -->
+<nav class="navbar">
+    <div class="logo">Welcome...</div>
+
+    <div class="nav-links">
+        <a href="index.html" class="nav-btn active">Home</a>
+        <a href="about.html" class="nav-btn">About</a>
+        <a href="skills.html" class="nav-btn">Skills</a>
+        <a href="projects.html" class="nav-btn">Projects</a>
+        <!-- <a href="journey.html" class="nav-btn">Journey</a> -->
+        <a href="contact.html" class="nav-btn">Contact</a>
+    </div>
+</nav>
+
+
+
+<!-- ✅ HERO SECTION -->
+<section class="hero">
+
+    <!-- LEFT TEXT -->
+    <div class="hero-left">
+
+        <p class="tag">HEY THERE!</p>
+
+        <h1>I AM <span id="typing"></span></h1>
+
+        <h2>Transforming data into meaningful insights</h2>
+
+
+        <div class="intro-lines">
+            <p>📊 Entry-Level Data Analyst</p>
+            <p>🎓 BE in Information Technology</p>
+            <p>🛠 Skilled in SQL, Power BI, Python & Excel</p>
+            <p>🚀 Passionate about turning raw data into decisions</p>
+        </div>
+
+
+        <div class="hero-buttons">
+
+            <a href="resume/Resume.pdf"
+               target="_blank"
+               class="btn">
+               View Resume
+            </a>
+
+            <a href="resume/Resume.pdf"
+               download
+               class="btn outline">
+               Download Resume
+            </a>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- RIGHT IMAGE -->
+    <div class="hero-right">
+
+        <div class="gradient-blob">
+            <div class="profile-circle">
+                <!-- 🔥 REPLACE IMAGE NAME -->
+                <img src="images/1000383642.jpg" alt="Akshay">
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ✅ TYPING SCRIPT -->
+<script>
+
+const text = "AKSHAY";
+let index = 0;
+
+function typeEffect(){
+
+    if(index < text.length){
+
+        document.getElementById("typing").textContent += text.charAt(index);
+
+        index++;
+
+        setTimeout(typeEffect,120);
+    }
+}
+
+typeEffect();
+
+</script>
+
+</body>
+</html>

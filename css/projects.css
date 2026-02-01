@@ -1,0 +1,145 @@
+.projects-section{
+max-width:1150px;
+margin:auto;
+padding:70px 20px;
+}
+
+.title{
+text-align:center;
+font-size:40px;
+}
+
+.subtitle{
+text-align:center;
+color:var(--text-light);
+margin-top:10px;
+max-width:650px;
+margin-inline:auto;
+}
+
+.underline{
+display:block;
+height:4px;
+width:90px;
+margin:10px auto;
+border-radius:10px;
+background:linear-gradient(90deg,var(--primary),#22c55e);
+}
+
+/* GRID */
+
+.projects-container{
+margin-top:55px;
+display:grid;
+gap:22px;
+}
+
+/* CARD */
+
+.project-card{
+background:var(--card-bg);
+border-radius:16px;
+padding:26px;
+border:1px solid var(--border);
+border-left:6px solid var(--primary);
+cursor:pointer;
+transition:.35s;
+}
+
+.project-card:hover{
+transform:translateY(-6px);
+box-shadow:0 14px 40px rgba(124,58,237,.12);
+}
+
+/* HEADER */
+
+.project-header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.project-header h2{
+font-size:22px;
+}
+
+.chevron{
+font-size:22px;
+transition:.4s;
+}
+
+/* BODY */
+
+.project-body{
+max-height:0;
+overflow:hidden;
+transition:max-height .45s ease, opacity .3s;
+opacity:.6;
+}
+
+.project-card.active .project-body{
+max-height:220px;
+margin-top:12px;
+opacity:1;
+}
+
+.project-card.active .chevron{
+transform:rotate(180deg);
+}
+
+/* BADGES */
+
+.tech-stack{
+margin-top:14px;
+}
+
+.tech-stack span{
+display:inline-block;
+padding:6px 14px;
+margin:6px 8px 0 0;
+border-radius:30px;
+font-size:13px;
+font-weight:500;
+background:#eef2ff;
+color:#4338ca;
+}
+/* ===============================
+   Mobile Hero Section
+================================ */
+@media (max-width: 768px) {
+
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  .hero-text {
+    margin-top: 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+  }
+
+  .hero-text h2 {
+    font-size: 18px;
+  }
+
+  .hero-image {
+    width: 220px;
+    height: 220px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .hero-buttons a {
+    width: 160px;
+    text-align: center;
+  }
+
+}

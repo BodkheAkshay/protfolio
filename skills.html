@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Skills | Akshay</title>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/skills.css">
+
+<!-- ✅ DEV ICON CDN -->
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">Akshay</div>
+
+    <div class="nav-links">
+        <a href="index.html" class="nav-btn">Home</a>
+        <a href="about.html" class="nav-btn">About</a>
+        <a href="skills.html" class="nav-btn active">Skills</a>
+        <a href="projects.html" class="nav-btn">Projects</a>
+        <!-- <a href="journey.html" class="nav-btn">Journey</a> -->
+        <a href="contact.html" class="nav-btn">Contact</a>
+    </div>
+</nav>
+
+
+
+<!-- PAGE -->
+<section class="page skills-bg">
+
+<div class="skills-container">
+
+    <h1>Technical Skills</h1>
+
+    <p class="subtitle">
+        Tools and technologies I use to analyze data, build dashboards,
+        and deliver actionable insights.
+    </p>
+
+
+
+    <!-- GRID -->
+    <div class="skills-grid">
+
+        <!-- SQL -->
+        <div class="skill-card">
+            <h3>
+                <i class="devicon-mysql-plain colored"></i>
+                SQL
+            </h3>
+
+            <div class="progress">
+                <div class="progress-bar sql"></div>
+            </div>
+
+            <span>Advanced</span>
+        </div>
+
+
+
+        <!-- POWER BI -->
+        <div class="skill-card">
+            <h3>
+                <i class="devicon-microsoftsqlserver-plain colored"></i>
+                Power BI
+            </h3>
+
+            <div class="progress">
+                <div class="progress-bar powerbi"></div>
+            </div>
+
+            <span>Advanced</span>
+        </div>
+
+
+
+        <!-- PYTHON -->
+        <div class="skill-card">
+            <h3>
+                <i class="devicon-python-plain colored"></i>
+                Python
+            </h3>
+
+            <div class="progress">
+                <div class="progress-bar python"></div>
+            </div>
+
+            <span>Intermediate</span>
+        </div>
+
+
+
+        <!-- EXCEL -->
+        <div class="skill-card">
+            <h3>
+                <i class="fas fa-file-excel"></i>
+                Excel
+            </h3>
+
+            <div class="progress">
+                <div class="progress-bar excel"></div>
+            </div>
+
+            <span>Advanced</span>
+        </div>
+
+
+
+        <!-- STATISTICS -->
+        <div class="skill-card">
+            <h3>
+                <i class="fas fa-chart-bar"></i>
+
+                Statistics
+            </h3>
+
+            <div class="progress">
+                <div class="progress-bar stats"></div>
+            </div>
+
+            <span>Intermediate</span>
+        </div>
+
+
+
+        <!-- MACHINE LEARNING -->
+        <div class="skill-card">
+            <h3>
+                <i class="devicon-tensorflow-original colored"></i>
+                Machine Learning
+            </h3>
+
+            <div class="progress">
+                <div class="progress-bar ml"></div>
+            </div>
+
+            <span>Intermediate</span>
+        </div>
+
+        <!-- NEURAL NETWORK (CENTER CARD) -->
+
+        <div class="skill-card neural-center">
+
+
+        <h3>
+        <i class="fas fa-brain"></i>
+        Neural Networks
+        </h3>
+
+        <div class="progress">
+        <div class="progress-bar nn"></div>
+    </div>
+
+    <span>Learning</span>
+
+</div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+
+<!-- ✅ SCROLL ANIMATION SCRIPT -->
+<script>
+
+const bars = document.querySelectorAll('.progress-bar');
+
+window.addEventListener('scroll', () => {
+
+    const trigger = window.innerHeight * 0.85;
+
+    bars.forEach(bar => {
+
+        const top = bar.getBoundingClientRect().top;
+
+        if(top < trigger){
+            bar.classList.add('animate');
+        }
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>

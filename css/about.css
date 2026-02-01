@@ -1,0 +1,87 @@
+/* PAGE BACKGROUND */
+.about-bg{
+    background:#f9fafb;
+}
+
+
+/* CONTAINER */
+.about-container{
+
+    max-width:900px;
+    margin:auto;
+
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+}
+
+
+/* CARD STYLE */
+.about-card p{
+    line-height: 1.85;
+    margin-bottom: 16px;
+}
+
+seriously {
+    background:white;
+    padding:20px;
+
+    border-radius:18px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.05);
+
+    transition:0.3s;
+}
+
+/* hover lift */
+.about-card:hover{
+    transform:translateY(-6px);
+}
+
+
+/* HEADINGS */
+
+.about-card h1{
+    margin-bottom:20px;
+}
+
+.about-card h2{
+    margin-bottom:14px;
+}
+
+.about-card h3{
+    color:#7c3aed;
+    margin-bottom:10px;
+}
+
+
+/* SUMMARY TEXT */
+.summary{
+    line-height:1.8;
+    color:#374151;
+}
+
+
+/* SKILLS GRID */
+.skills-grid{
+
+    margin-top:20px;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+
+    gap:12px;
+}
+
+
+.skills-grid span{
+
+    background:#eef2ff;
+    color:#4338ca;
+
+    padding:10px 14px;
+
+    border-radius:10px;
+
+    font-size:14px;
+}
